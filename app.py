@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 # Load the saved LOF model based on the sensor name
 def load_model(sensor_name):
-    model_path = os.path.join(os.path.dirname(__file__), 'model', f'{sensor_name}_lof.pkl')
+    model_path = os.path.join(os.path.dirname(__file__), 'model', f'model_{sensor_name}_lof.pkl')
     return joblib.load(model_path)
     
 # Function to preprocess the new data for a single sensor
