@@ -15,7 +15,7 @@ from sklearn.impute import SimpleImputer
 
 app = Flask(__name__)
 
-@app.route("/")
+# @app.route("/")
 
 # Load the saved LOF model based on the sensor name
 def load_model(sensor_name):
